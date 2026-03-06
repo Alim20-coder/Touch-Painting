@@ -1,0 +1,22 @@
+/* إخفاء السكرول بار */
+#imageTrack::-webkit-scrollbar {
+    display: none;
+}
+#imageTrack {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* تنسيق الكارد النشط */
+.active-card {
+    border: 3px solid #4b3621 !important;
+    transform: scale(1.05);
+}
+
+.thumb-card:hover:not(.active-card) {
+    transform: translateY(-5px);
+}
+
+.transition-opacity {
+    transition: opacity 0.2s ease-in-out;
+}

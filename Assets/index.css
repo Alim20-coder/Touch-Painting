@@ -1,0 +1,172 @@
+
+/* nav bar styles------------------------  */
+.custom-brown-bg {
+    background-color: #7e4211cc !important; }
+
+/* Touch Styles in navbar---------------- */
+.touch-text {
+    color: #FFCC80; /* لون كريمي جذاب */
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.7s ease-in-out;}
+
+.nav-link {
+    color: rgb(68, 36, 5) !important; /* لون كريمي هادي */
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ee9105 !important; /* يقلب ذهبي لما تقف عليه */
+    border-bottom: 3px solid ;
+    border-top: 3px solid ;
+    padding:5px;
+
+    
+}
+
+
+.touch-text:hover {
+    transform: rotate(360deg);}
+/* logo img in navbar ----------------------- */
+.img-hover-scale {
+    transition: transform 0.4s ease-in-out; }
+
+.img-hover-scale:hover {
+    transform: scale(1.15); }
+/* logo img in navbar ----------------------- */
+
+/* Navbar media query ---------------------- */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: center; 
+        background-color: rgba(0, 0, 0, 0.15); 
+        border-radius: 15px;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-nav {
+        padding: 10px 0; 
+    }
+    .nav-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 8px 0;
+    }
+    
+    .nav-item:last-child {
+        border-bottom: none; 
+    }
+    
+    .touch-text {
+        margin-top: 5px !important; 
+        font-size: 1.5rem; 
+        display: block; 
+    }
+
+    .navbar-brand img {
+        width: 40px !important; 
+        height: 40px !important;
+        transition: 0.3s;
+    }}
+/* Navbar media query ---------------------- */
+ 
+
+/* hero section start  */
+/* شكل الصور في الشريط */
+.custom-card {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px; /* انحناء الزوايا مثل صورتك */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.custom-card:hover {
+    transform: scale(1.02);
+    border-color: #001f27;
+}
+
+/* Navbar End ------------------------------ */
+
+/* hero start  */
+#typing-text {
+    padding-left: 5px;
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+
+ .color-0 { color: #FFCC80; } 
+.color-1 { color: #FFCC80; } /* أخضر */
+.color-2 { color: #FFCC80;} /* أزرق */
+
+/* تأثير الشفافية عند الهوفر */
+.custom-btn:hover {
+    background-color: transparent !important; /* يجعل الخلفية شفافة */
+    color: #FFCC80 !important; /* يغير لون الخط للون البرتقالي ليكون واضحاً */
+    border-color: #FFCC80 !important; /* يحافظ على لون الإطار */
+}
+/* hero end  */
+
+/* second section start  */
+/* تنسيق سيكشن التدرج اللوني (البني الذهبي) */
+.artistic-section {
+    background: #2e170a;
+    position: relative;
+    color: #fff; /* لون افتراضي فاتح للنصوص العامة لو وجدت */
+}
+
+/* تأثير التكبير عند الوقوف على الصور المربعة */
+.img-hover-zoom img {
+    transition: transform 0.6s ease;
+}
+.img-hover-zoom:hover img {
+    transform: scale(1.1) rotate(2deg); /* تكبير ودوران بسيط */
+}
+
+/* زر مخصص شفاف عند الهوفر بنفس لون النص البني */
+.artistic-btn-outline:hover {
+    background-color: transparent !important;
+    color: #bf9b30 !important; /* لون ذهبي فاتح للقراءة على الخلفية الغامقة */
+    border-color: #bf9b30 !important;
+}
+
+/* --- تنسيقات الأنيميشن (الظهور التدريجي) --- */
+/* الكلاسات الأساسية قبل الظهور */
+.reveal-left, .reveal-right {
+    transition: all 1s ease-out;
+}
+
+/* الكلاس الذي سنضيفه بالجافا سكريبت لتفعيل الظهور */
+.reveal-active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* زاوية دخول مختلفة لكل عنصر */
+.reveal-left.reveal-active {
+    transform: translateX(0) !important;
+}
+.reveal-right.reveal-active {
+    transform: translateX(0) !important;
+}
+
+/* تعديل الدخول المبدئي في الموبايل ليكون عمودياً */
+@media (max-width: 991.98px) {
+    .reveal-left, .reveal-right {
+        transform: translateY(20px) !important;
+    }
+}
+/* second section end  */
+/* footer  */
+.gmt-brand:hover {
+    background-color: #FFCC80 !important;
+    color: #352617 !important;
+    box-shadow: 0 0 20px rgba(255, 204, 128, 0.8);
+    transform: translateY(-2px);
+    display: inline-block;
+}
+/* footer  */
