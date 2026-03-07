@@ -5,9 +5,9 @@
 
 /* Touch Styles in navbar---------------- */
 .touch-text {
-    color: #FFCC80; /* لون كريمي جذاب */
+    color: #251906; /* لون كريمي جذاب */
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     display: inline-block;
     transition: transform 0.7s ease-in-out;}
